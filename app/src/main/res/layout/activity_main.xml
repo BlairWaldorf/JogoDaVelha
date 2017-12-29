@@ -27,7 +27,8 @@
             android:layout_height="100dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="0" />
 
         <ImageView
             android:id="@+id/field2"
@@ -35,7 +36,8 @@
             android:layout_height="100dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="1" />
 
         <ImageView
             android:id="@+id/field3"
@@ -43,7 +45,8 @@
             android:layout_height="100dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="2" />
 
         <ImageView
             android:id="@+id/field4"
@@ -51,16 +54,18 @@
             android:layout_height="100dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
-            android:onClick="dropIn"/>
+            android:onClick="dropIn"
+            android:tag="3" />
 
         <ImageView
             android:id="@+id/field5"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginRight="30dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
             android:layout_marginTop="25dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="4" />
 
         <ImageView
             android:id="@+id/field6"
@@ -68,7 +73,8 @@
             android:layout_height="100dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="5" />
 
         <ImageView
             android:id="@+id/field7"
@@ -76,16 +82,18 @@
             android:layout_height="100dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="6" />
 
         <ImageView
             android:id="@+id/field8"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginRight="30dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
             android:layout_marginTop="25dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="7" />
 
         <ImageView
             android:id="@+id/field9"
@@ -93,6 +101,7 @@
             android:layout_height="100dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="8" />
     </GridLayout>
 </android.support.constraint.ConstraintLayout>
