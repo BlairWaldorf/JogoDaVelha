@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -48,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         w = "PhiPhi O'Hara (White)";
                     }
-                    Button restart = (Button)findViewById(R.id.restart);
+                    Button restartBtn = (Button)findViewById(R.id.restartBtn);
                     TextView winnerTextView = (TextView)findViewById(R.id.winnerTextView);
                     winnerTextView.setText(w + " Venceu!!!");
-                    restart.setVisibility(View.VISIBLE);
+                    restartBtn.setVisibility(View.VISIBLE);
                     winnerTextView.setVisibility(View.VISIBLE);
                 }
             }
@@ -60,10 +61,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void restart(View view){
-        Button restart = (Button)findViewById(R.id.restart);
+        Button restartBtn = (Button)findViewById(R.id.restartBtn);
         TextView winnerTextView = (TextView)findViewById(R.id.winnerTextView);
-        restart.setVisibility(View.INVISIBLE);
+        //restartBtn.setVisibility(View.INVISIBLE);
         winnerTextView.setVisibility(View.INVISIBLE);
+
+        GridLayout gridLayout1 = (GridLayout)findViewById(R.id.gridLayout1);
+        for (int i=0;i <gridLayout1.getChildCount();i++){
+            ImageView counter = (ImageView) gridLayout1.getChildAt(i);
+            counter.setImageDrawable(null);
+        }
+
+        for(int i=0; i<gameState.length; i++)
+        gameState[i] = 2;
+        player = 0;
+        endGame = true;
     }
 
     @Override
